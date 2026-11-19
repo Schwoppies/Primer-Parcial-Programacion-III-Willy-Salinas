@@ -29,3 +29,13 @@ Checkpoint 1: Diseño de Clases
   - `obtenerLibros(): List<Libro>`
   - `obtenerRevistas(): List<Revista>`
   - `datosIniciales(): CatalogoLibreria`
+
+Diseño de Interfaz (Jetpack Compose)
+
+Pantalla 1: Catálogo de Librería (`CatalogoScreen`)
+- **Objetivo:** Mostrar la lista de productos disponibles (`Libro` y `Revista`) con su tipo, título y precio.
+- **Componentes de Jetpack Compose:** `Scaffold`, `TopAppBar`, `LazyColumn`, `Card`, `Column`, `Row`, `Text`, `Badge` o `AssistChip`, y `Button` para ver detalle o cambiar de pantalla.
+
+Pantalla 2: Detalle y Disponibilidad (`DetalleProductoScreen`)
+- **Objetivo:** Mostrar los datos específicos del elemento seleccionado (por ejemplo, autor/ISBN si es `Libro`, o edición/periodicidad si es `Revista`) y permitir alternar o consultar disponibilidad.
+- **Componentes de Jetpack Compose:** `Scaffold`, `TopAppBar`, `Column`, `Card`, `Text`, `HorizontalDivider`, `Button` / `OutlinedButton`, e `IconButton` para volver al catálogo.
